@@ -1,0 +1,74 @@
+[tool]
+[tool.poetry]
+name = 'openbrokerapi'
+version = '4.0.0'
+description = 'A python package for the V2 CF Service Broker API and Open Broker API (version 2.13+)'
+license = 'MIT'
+authors = ['Maic Siemering <maic@siemering.tech>']
+readme = 'README.rst'
+keywords = [
+    'cloudfoundry',
+    'cfbrokerapi',
+    'openbrokerapi',
+    'openservicebrokerapi',
+    'servicebroker',
+    'flask',
+    'kubernetes',
+    'k8s']
+documentation='https://openbrokerapi.readthedocs.io/en/latest/'
+repository='https://github.com/openservicebrokerapi/servicebroker'
+
+[tool.poetry.dependencies]
+python = '>=3.5'
+flask = '*'
+gevent = {optional = true, version = '*'}
+sphinx = {optional = true, version = '>=1.4'}
+sphinx-rtd-theme = {optional = true, version = '*'}
+
+[tool.poetry.dev-dependencies]
+pytest = '^5.2'
+
+[tool.poetry.extras]
+gevent = ['gevent']
+docs = ['sphinx', 'sphinx-rtd-theme']
+
+classifiers = [
+    # How mature is this project? Common values are
+        #   3 - Alpha
+        #   4 - Beta
+        #   5 - Production/Stable
+        'Development Status :: 5 - Production/Stable',
+
+        # Frameworks
+        'Framework :: Flask',
+
+        # Indicate who your project is intended for
+        'Intended Audience :: Developers',
+
+        # Pick your license as you wish (should match 'license' above)
+        'License :: OSI Approved :: MIT License',
+
+        'Operating System :: OS Independent',
+
+        # Specify the Python versions you support here. In particular, ensure
+        # that you indicate whether you support Python 2, Python 3 or both.
+        'Programming Language :: Python :: 3 :: Only',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+]
+
+[tool.poetry.scripts]
+# Scripts from namespace
+
+
+# PEP 517 & 518
+# server 10.66.5.80:8080
+# username: stephs
+# password: poetry
+# poetry publish -r workshop -u stephs -p poetry
+
+# poetry config settings.virtualenvs.create false
+
+
+

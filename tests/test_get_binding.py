@@ -1,8 +1,8 @@
 from http import HTTPStatus
 from uuid import uuid4
 
-from openbrokerapi import errors
-from openbrokerapi.service_broker import GetBindingSpec
+from openbrokerapi_v2 import errors
+from openbrokerapi_v2.service_broker import GetBindingSpec
 from tests import BrokerTestCase
 
 

@@ -2,9 +2,9 @@ import unittest
 from unittest.mock import Mock
 from uuid import uuid4
 
-from openbrokerapi.catalog import ServicePlan
-from openbrokerapi.router import Router
-from openbrokerapi.service_broker import (
+from openbrokerapi_v2.catalog import ServicePlan
+from openbrokerapi_v2.router import Router
+from openbrokerapi_v2.service_broker import (
     Service,
     ProvisionDetails,
     ProvisionedServiceSpec,

@@ -1,8 +1,8 @@
 import http
 
-from openbrokerapi import errors
+from openbrokerapi_v2 import errors
 from tests import BrokerTestCase
-from openbrokerapi.service_broker import LastOperation, OperationState
+from openbrokerapi_v2.service_broker import LastOperation, OperationState
 
 
 class LastOperationTest(BrokerTestCase):

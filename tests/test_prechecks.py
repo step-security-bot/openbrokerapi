@@ -2,9 +2,9 @@ import http
 import base64
 from unittest import skip
 
-from openbrokerapi import errors, constants
-from openbrokerapi.catalog import ServicePlan
-from openbrokerapi.service_broker import Service
+from openbrokerapi_v2 import errors, constants
+from openbrokerapi_v2.catalog import ServicePlan
+from openbrokerapi_v2.service_broker import Service
 from tests import BrokerTestCase
 
 

@@ -4,9 +4,9 @@ import logging
 
 from flask import Flask
 
-from openbrokerapi.api import BrokerCredentials
-from openbrokerapi.log_util import basic_config
-from openbrokerapi.service_broker import ServiceBroker
+from openbrokerapi_v2.api import BrokerCredentials
+from openbrokerapi_v2.log_util import basic_config
+from openbrokerapi_v2.service_broker import ServiceBroker
 from tests import BrokerTestCase
 
 
@@ -14,7 +14,7 @@ class NotImplementedBrokerTest(BrokerTestCase):
     auth_header = 'Basic ' + base64.b64encode(b":").decode("ascii")
 
     def create_app(self):
-        from openbrokerapi.api import get_blueprint
+        from openbrokerapi_v2.api import get_blueprint
 
         app = Flask(__name__)
         self.broker = ServiceBroker()

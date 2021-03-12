@@ -1,9 +1,9 @@
 import http
 import json
 
-from openbrokerapi import errors
-from openbrokerapi.catalog import ServicePlan
-from openbrokerapi.service_broker import Binding, BindDetails, BindResource, VolumeMount, SharedDevice, BindState, \
+from openbrokerapi_v2 import errors
+from openbrokerapi_v2.catalog import ServicePlan
+from openbrokerapi_v2.service_broker import Binding, BindDetails, BindResource, VolumeMount, SharedDevice, BindState, \
     Service
 from tests import BrokerTestCase
 

@@ -9,9 +9,9 @@ from uuid import uuid4
 import requests
 from requests.auth import HTTPBasicAuth
 
-from openbrokerapi import api, errors
-from openbrokerapi.catalog import ServicePlan
-from openbrokerapi.service_broker import (
+from openbrokerapi_v2 import api, errors
+from openbrokerapi_v2.catalog import ServicePlan
+from openbrokerapi_v2.service_broker import (
     ServiceBroker,
     Service,
     ProvisionDetails,

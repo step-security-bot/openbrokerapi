@@ -1,9 +1,9 @@
 import http
 import json
 
-from openbrokerapi import errors
-from openbrokerapi.catalog import ServicePlan
-from openbrokerapi.service_broker import UpdateServiceSpec, UpdateDetails, PreviousValues, Service
+from openbrokerapi_v2 import errors
+from openbrokerapi_v2.catalog import ServicePlan
+from openbrokerapi_v2.service_broker import UpdateServiceSpec, UpdateDetails, PreviousValues, Service
 from tests import BrokerTestCase
 
 

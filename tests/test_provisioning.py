@@ -1,10 +1,10 @@
 import http
 import json
 
-import openbrokerapi
-from openbrokerapi import errors
-from openbrokerapi.catalog import ServicePlan
-from openbrokerapi.service_broker import ProvisionedServiceSpec, ProvisionDetails, ProvisionState, Service
+import openbrokerapi_v2
+from openbrokerapi_v2 import errors
+from openbrokerapi_v2.catalog import ServicePlan
+from openbrokerapi_v2.service_broker import ProvisionedServiceSpec, ProvisionDetails, ProvisionState, Service
 from tests import BrokerTestCase
 
 class ProvisioningTest(BrokerTestCase):
@@ -291,7 +291,7 @@ class ProvisioningTest(BrokerTestCase):
         ), response.json)
 
     def test_returns_202_if_missing_org_and_space_guids_data_org_space_check_flag_true(self):
-        openbrokerapi.service_broker.DISABLE_SPACE_ORG_GUID_CHECK = True
+        openbrokerapi_v2.service_broker.DISABLE_SPACE_ORG_GUID_CHECK = True
 
         self.broker.provision.return_value = self.broker.provision.return_value = ProvisionedServiceSpec(
             ProvisionState.IS_ASYNC,
@@ -317,7 +317,7 @@ class ProvisioningTest(BrokerTestCase):
             operation="operation_str"
         ))
 
-        openbrokerapi.service_broker.DISABLE_SPACE_ORG_GUID_CHECK = False
+        openbrokerapi_v2.service_broker.DISABLE_SPACE_ORG_GUID_CHECK = False
 
     def test_returns_200_if_identical_service_exists(self):
         self.broker.provision.return_value = ProvisionedServiceSpec(ProvisionState.IDENTICAL_ALREADY_EXISTS)

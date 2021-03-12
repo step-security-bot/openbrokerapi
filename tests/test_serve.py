@@ -5,9 +5,9 @@ from unittest.mock import Mock
 
 import requests
 
-from openbrokerapi import api
-from openbrokerapi.catalog import ServicePlan
-from openbrokerapi.service_broker import Service, ProvisionedServiceSpec, ServiceBroker, DeprovisionDetails, \
+from openbrokerapi_v2 import api
+from openbrokerapi_v2.catalog import ServicePlan
+from openbrokerapi_v2.service_broker import Service, ProvisionedServiceSpec, ServiceBroker, DeprovisionDetails, \
     DeprovisionServiceSpec, ProvisionDetails
 
 
